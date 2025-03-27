@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",()=>{
-    const api_key="8c20ef1dbf71b6e7dc17c6fc494a1722"
+    const api_key="add this"
     const location=document.getElementById("location")
     const btn=document.getElementById("get-btn")
     const condition=document.getElementById("condition")
