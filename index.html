@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #121212;
+            color: white;
+        }
+        .weather-container {
+            border: 2px solid #444;
+            padding: 20px;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+            background-color: #1e1e1e;
+        }
+        .error {
+            color: red;
+           
+        }
+        .hidden{
+            display: none;
+        }
+        input {
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h2>Current Weather</h2>
+        <input type="text" id="location" placeholder="Enter location">
+        <button id="get-btn">Get Weather</button>
+        <p class=""><strong>Temperature:</strong> <span id="temp">--</span>°C</p>
+        <p class=""><strong>Condition:</strong> <span id="condition">--</span></p>
+        <p class="error hidden" id="error">Failed to fetch weather data.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
